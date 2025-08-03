@@ -1,0 +1,66 @@
+/* src/components/DoctorCard.css */
+.doctor-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(31, 41, 55, 0.1);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.doctor-card:hover {
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+  transform: translateY(-5px);
+}
+
+.doctor-image {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #2563eb; /* blue border */
+}
+
+.doctor-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.doctor-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  color: white;
+  min-width: 110px;
+}
+
+/* Status colors */
+.status.available-today {
+  background-color: #22c55e; /* green */
+}
+
+.status.fully-booked {
+  background-color: #ef4444; /* red */
+}
+
+.status.on-leave {
+  background-color: #f59e0b; /* amber */
+}
+
+.status.unknown-status {
+  background-color: #6b7280; /* gray */
+}

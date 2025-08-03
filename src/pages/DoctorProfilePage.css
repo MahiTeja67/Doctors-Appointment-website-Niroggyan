@@ -1,0 +1,120 @@
+/* src/pages/DoctorProfilePage.css */
+.doctor-profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: start;
+  position: relative;
+  min-height: 100vh;                   
+  width: 100%;                         
+  padding: 60px 20px 80px;
+  background-image: url('https://res.cloudinary.com/dy6va4nas/image/upload/v1754209110/web_background_bo0cv5.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;         
+  background-color: #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.doctor-profile-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f4ecec84;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.doctor-profile-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.doctor-profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2563eb;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  align-self: center;
+}
+
+.doctor-profile-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #111827;
+}
+
+.doctor-profile-container p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin: 8px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.book-btn {
+    margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: 16px 40px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.5);
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.book-btn:hover {
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+  box-shadow: 0 8px 20px rgba(30, 64, 175, 0.7);
+}
+
+@media (max-width: 480px) {
+  .doctor-profile-container {
+    padding: 30px 15px;
+  }
+
+  .doctor-profile-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .book-btn {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
+.back-btn {
+  margin-top: 5px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f3f4f6, #dbeafe);
+  border: 1.5px solid #2563eb;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.back-btn:hover {
+  background: #2563eb;
+  color: #fff;
+}
